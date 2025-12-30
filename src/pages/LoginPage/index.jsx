@@ -1,5 +1,6 @@
 import Login from "../../components/Login";
 import { login } from "../../services/api/auth";
+import googleLogin from "../../components/GoogleLogin";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -34,10 +35,21 @@ const LoginPage = () => {
     }
   };
 
+  const handleGoogleLoginWrapper = async () => {
+    try {
+      await googleLogin();
+      navigate("/dashboard");
+    } catch (error) {
+      // Error handling inside googleLogin or here if needed
+      console.log("Google login flow failed", error);
+    }
+  }
+
   return (
     <>
       <Login
         handleLogin={handleLogin}
+        handleGoogleLogin={handleGoogleLoginWrapper}
         loading={loading}
         email={email}
         password={password}

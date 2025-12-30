@@ -84,13 +84,12 @@ const Login = ({
             className="mt-6 w-full rounded-full bg-red-500 py-3 text-white font-semibold hover:bg-red-600 transition"
             disabled={loading}
           >
-            Sign In
             {loading ? (
               <div className="flex items-center justify-center gap-2">
                 <Spinner /> Logging in...
               </div>
             ) : (
-              "Đăng nhập"
+              "Sign In"
             )}
           </button>
 
