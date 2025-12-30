@@ -11,7 +11,7 @@ const testLoginGoogle = async () => {
     console.log("1. Đã lấy được Firebase Token");
 
     // 2. Gửi token xuống Backend xác thực
-    const res = await axios.post('http://localhost:3001/api/auth/google-login', {
+    const res = await axios.post('https://be-forgotpassword.onrender.com/api/auth/google-login', {
       token: idToken
     });
 
