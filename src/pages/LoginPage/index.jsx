@@ -38,7 +38,6 @@ const LoginPage = () => {
     <>
       <Login
         handleLogin={handleLogin}
-        handleGoogleLogin={handleGoogleLogin}
         loading={loading}
         email={email}
         password={password}

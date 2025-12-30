@@ -79,7 +79,6 @@ const Login = ({
             </Link>
           </div>
 
-          {/* Sign In */}
           <button
             onClick={() => handleLogin()}
             className="mt-6 w-full rounded-full bg-red-500 py-3 text-white font-semibold hover:bg-red-600 transition"
@@ -95,14 +94,12 @@ const Login = ({
             )}
           </button>
 
-          {/* Divider */}
           <div className="my-6 flex items-center">
             <div className="flex-1 h-px bg-gray-300" />
             <span className="px-4 text-xs text-gray-500">OR CONTINUE WITH</span>
             <div className="flex-1 h-px bg-gray-300" />
           </div>
 
-          {/* Google */}
           <button
             onClick={handleGoogleLogin}
             className="w-full flex items-center justify-center gap-3 rounded-full border border-gray-300 py-3 hover:bg-gray-50 transition"
@@ -117,7 +114,6 @@ const Login = ({
             </span>
           </button>
 
-          {/* Signup */}
           <p className="mt-6 text-center text-sm text-gray-600">
             Don’t have an account?
             <Link to="/register" className="ml-1 text-red-500 hover:underline">
